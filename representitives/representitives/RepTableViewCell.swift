@@ -9,16 +9,24 @@
 import UIKit
 
 class RepTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var representative: Representative? {
+        didSet {
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var partyLabel: UILabel!
+    @IBOutlet weak var districtLabel: UILabel!
+    @IBOutlet weak var websiteLabel: UILabel!
+    
+    @IBOutlet weak var phoneLabel: UILabel!
+    
+    func updateViews() {
+        self.nameLabel.text = representative?.name
+        self.partyLabel.text = representative?.party
+        self.districtLabel.text = representative?.district
+        self.websiteLabel.text = representative?.link
+        self.phoneLabel.text = representative?.phone
+        
     }
-
 }

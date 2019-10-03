@@ -14,8 +14,10 @@
 		349553C02345613B004EB34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349553BE2345613B004EB34E /* LaunchScreen.storyboard */; };
 		349553C9234563E9004EB34E /* representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349553C8234563E9004EB34E /* representative.swift */; };
 		349553CB234564D5004EB34E /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349553CA234564D5004EB34E /* RepresentativeController.swift */; };
+		34C0DD7123469034002135E4 /* RepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C0DD7023469034002135E4 /* RepTableViewCell.swift */; };
 		34D475F52346878C00233258 /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D475F42346878C00233258 /* StateListTableViewController.swift */; };
 		34D475F72346881C00233258 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D475F62346881C00233258 /* States.swift */; };
+		34D475FD234689CD00233258 /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D475FC234689CD00233258 /* StateDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 		349553C12345613B004EB34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349553C8234563E9004EB34E /* representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = representative.swift; sourceTree = "<group>"; };
 		349553CA234564D5004EB34E /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		34C0DD7023469034002135E4 /* RepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepTableViewCell.swift; sourceTree = "<group>"; };
 		34D475F42346878C00233258 /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
 		34D475F62346881C00233258 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		34D475FC234689CD00233258 /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				349553B923456139004EB34E /* Main.storyboard */,
-				34D475F42346878C00233258 /* StateListTableViewController.swift */,
-				34D475F62346881C00233258 /* States.swift */,
+				34C0DD7023469034002135E4 /* RepTableViewCell.swift */,
+				34D475F92346899100233258 /* controller */,
+				34D475F82346898800233258 /* models */,
 				349553C723456337004EB34E /* resources */,
-				349553C8234563E9004EB34E /* representative.swift */,
-				349553CA234564D5004EB34E /* RepresentativeController.swift */,
 			);
 			path = representitives;
 			sourceTree = "<group>";
@@ -82,6 +85,41 @@
 				349553C12345613B004EB34E /* Info.plist */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		34D475F82346898800233258 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				34D475F62346881C00233258 /* States.swift */,
+				349553C8234563E9004EB34E /* representative.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		34D475F92346899100233258 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				34D475FB234689A800233258 /* model controller */,
+				34D475FA2346899C00233258 /* view controller */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		34D475FA2346899C00233258 /* view controller */ = {
+			isa = PBXGroup;
+			children = (
+				34D475FC234689CD00233258 /* StateDetailTableViewController.swift */,
+				34D475F42346878C00233258 /* StateListTableViewController.swift */,
+			);
+			path = "view controller";
+			sourceTree = "<group>";
+		};
+		34D475FB234689A800233258 /* model controller */ = {
+			isa = PBXGroup;
+			children = (
+				349553CA234564D5004EB34E /* RepresentativeController.swift */,
+			);
+			path = "model controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +196,9 @@
 				349553B423456139004EB34E /* AppDelegate.swift in Sources */,
 				349553B623456139004EB34E /* SceneDelegate.swift in Sources */,
 				349553CB234564D5004EB34E /* RepresentativeController.swift in Sources */,
+				34C0DD7123469034002135E4 /* RepTableViewCell.swift in Sources */,
 				34D475F72346881C00233258 /* States.swift in Sources */,
+				34D475FD234689CD00233258 /* StateDetailTableViewController.swift in Sources */,
 				34D475F52346878C00233258 /* StateListTableViewController.swift in Sources */,
 				349553C9234563E9004EB34E /* representative.swift in Sources */,
 			);
